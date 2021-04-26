@@ -1,0 +1,21 @@
+.containerCart{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    margin: 70px auto 0px auto;
+    max-width: 1024px;
+    min-height:calc(100vh - ((300px + 4em)));
+    .contentCart{
+    padding-top: 3em;
+
+    }
+    .titleCart{
+        display: flex;
+        align-items: center;
+    }
+    .emptyCart, .ant-empty{
+        height: 100%;
+    } 
+    .ant-empty-image{
+        height: 200px;
+    }
+}

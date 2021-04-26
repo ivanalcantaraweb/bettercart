@@ -1,0 +1,70 @@
+.containerTableCart{
+    padding: 3em;
+    background-color: white;
+    border-radius: 1em;
+    table {
+        width: 100%;
+
+
+        thead{
+            border-bottom: 1px solid rgb(233, 233, 233);
+        }
+        tbody{
+            tr {
+                td {
+                    padding: 1em;
+                    border-bottom: 1px solid rgb(233, 233, 233);
+
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .containerTotalCart{
+        .countProducts{
+            margin-top: 2em;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            flex-direction: column;
+            p, span {
+                text-align: right;
+            }
+            p{
+                margin: 0px;
+            }
+            span{
+                font-size: 2em;
+                font-weight: 600;
+            }
+        }
+        .totalCart{
+            margin-top: 2em;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            flex-direction: column;
+            p, span {
+                text-align: right;
+            }
+            p{
+                margin: 0px;
+            }
+            span{
+                font-size: 2em;
+                font-weight: 600;
+            }
+            button{
+                width: 200px;
+            }
+            .containerButtonsTotalCart{
+                margin-top: 3em;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

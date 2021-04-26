@@ -1,0 +1,160 @@
+#home{
+    .ant-carousel{
+        margin-top: 70px;
+    }
+}
+
+
+.containerHome{
+    width: 100%;
+    transition: all 1s;
+    .containerGridProducts{
+        display: grid;
+        width: 1024px;
+        margin: 0 auto;
+        grid-template-rows: 100px 1fr;
+        gap: 1.5em;
+        padding-top: 2em;
+            .titleGridProducts{
+                display: flex;
+                align-items: center;
+                h2{
+                    margin: 0px;
+                }
+            }
+            .gridProducts{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1.5em;
+                transition: all 1s;
+                .productoItem{
+                    background-color: #fff;
+                    box-shadow:  1px 1px 8px -3px #ccc;
+                    border-radius: 8px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 0.3fr;
+                    position: relative;
+
+                    .containerImageItem{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                    }
+                    .imageContainerItem{
+                        position: relative;
+                        height: 100%;
+                        span{
+                            background-color: #35c84c;
+                            color: white;
+                            padding: 0.32em;
+                            position: absolute;
+                            right: 0px;
+                            z-index: 5;
+                            border-radius:0px 8px 0px 0px;
+                        }
+                        img{
+                            width: 100%;
+                            object-fit: cover;
+                            height: 100%;
+                            border-radius: 8px 8px 0px 0px;
+                        }
+                    }
+                    .contentContainerItem{
+                        padding: 1em;
+                        p{
+                            font-size: 0.8em;
+                        }
+                        .detailContentItemGrid{
+                            display: flex;
+                            justify-content: flex-end;
+                            .textAddedItem{
+                                color: rgb(221, 221, 221);
+                                font-size: 0.8em;
+                                svg{
+                                    width: 16px;
+                                    transform: translate(-7px, 7px);
+                                    color: green
+                                }
+                            }
+                            .textAddItem{
+                                font-size: 0.8em;
+                                svg{
+                                    width: 16px;
+                                   transform: translate(-7px, 7px);
+                                }
+                                &:hover{ 
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    .detalleHoverItemGrid{             
+                            &:after {
+                                content: "Ver detalles";
+                                background-color: #02aec9a4;
+                                height: 100%;
+                                width: 100%;
+                                position: absolute;
+                                top: 0px;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 1.5em;
+                                color: white;
+                                font-weight: 700;
+                                display: none;
+                                border-radius: 8px 8px 0px 0px ;
+                            }
+
+                            &:hover{ 
+                                &:after {
+                                    display: flex;
+                                }
+                            }
+                    }
+                    .detalleAgregadoItemGrid{             
+                        &:after {
+                            content: "Agregado a carrito";
+                            background-color: #35d427a4;
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            top: 0px;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1.5em;
+                            color: white;
+                            font-weight: 700;
+                            display: flex;
+                            border-radius: 8px 8px 0px 0px ;
+                        }
+
+                       
+                }
+
+
+                }
+
+                @media screen and (max-width:1100px) {
+                    grid-template-columns: 1fr 1fr;
+                }
+                @media screen and (max-width:777px) {
+                    grid-template-columns: 1fr;
+                }
+                 
+            }
+
+
+            @media screen and (max-width:1100px) {
+                width: 778px;
+            }
+
+            @media screen and (max-width:777px) {
+                width: 80%;
+            }
+
+
+        }
+}
+   
